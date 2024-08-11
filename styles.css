@@ -3,7 +3,7 @@
     src: url(./fonts/CarmenSans-SemiBold.woff2);
 }
 *{
-    font-family: 'custom';
+    font-family: 'custom', Arial, sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -14,19 +14,20 @@ body{
 }
 
 .header{
-    padding: 0.8% 5%;
+    padding: 0.8% 10%;
     display: flex;
     width: 100%;
     gap: 50px;
     border-bottom: 1px solid black;
+    padding-left: 18%;
 }
 
 .logo{
     box-sizing: border-box;
-    padding-left: 8%;
     margin-right: auto;
     font-size: 2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .login{
@@ -98,7 +99,7 @@ span{
 
 .cards{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15%;
     width: 60%;
     justify-content: space-between;
@@ -111,14 +112,12 @@ span{
     width: 255px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     border-radius: 20px;
     background-color: rgb(246, 249, 255);
     flex: auto;
     flex-shrink: 0;
-    flex-wrap: wrap;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 .card:hover{
@@ -137,4 +136,51 @@ span{
 .card img{
     height: 50px;
     width: 50px;
+}
+
+button{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        height: min-content;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        top: 1000px;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .login, .join{
+        transform: scale(0.8);
+    }
+    .header{
+        gap: 10px;
+    }
 }
