@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial',sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.header{
+    padding: 0.8% 5%;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    box-sizing: border-box;
+    padding-left: 8%;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.login{
+    padding: 13px 35px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0px 3px 3px rgb(0 0 0 /0.4);
+}
+
+.join{
+    padding: 10px 18px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 4px 3px rgb(0 0 0 /0.1);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
